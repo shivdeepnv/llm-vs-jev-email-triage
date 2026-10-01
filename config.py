@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-MODEL = os.getenv("INBOXHERO_MODEL", "claude-haiku-4-5-20251001")
+HAIKU_MODEL = os.getenv("INBOXHERO_MODEL", "claude-haiku-4-5-20251001")
+SONNET_MODEL = os.getenv("SONNET_MODEL", "claude-sonnet-5")
 
 TYPESAFE_API_KEY = os.getenv("TYPESAFE_API_KEY")
 JEV_MODEL = os.getenv("JEV_MODEL", "jev-latest")
